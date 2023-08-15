@@ -12,21 +12,23 @@ keywords = ["substrate", "ink", "polkadot"]
 categories = ["blockchain", "smart-contracts", "web3"]
 
 [dependencies]
-codec = { package = "parity-scale-codec", version="3.6", default-features = false, features = ["derive"] }
-frame-benchmarking = { version = "22.0.0", default-features = false, optional = true }
-frame-support = { version = "22.0.0", default-features = false }
-frame-system = { version = "22.0.0", default-features = false }
-scale-info = { version = "2.9", default-features = false, features = ["derive"] }
-sp-std = { version = "9.0.0", default-features = false }
-pallet-contracts = { version = "21.0.0", default-features = false }
-pallet-contracts-primitives = { version = "25.0.0", default-features = false }
-pallet-timestamp = { version = "21.0.0", default-features = false }
-pallet-balances = { version = "22.0.0", default-features = false }
-sp-core = { version = "22.0.0", default-features = false }
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = [
+	"derive",
+] }
+frame-benchmarking = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus", optional = true }
+frame-support = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+frame-system = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+scale-info = { version = "2.1.1", default-features = false, features = ["derive"] }
+sp-std = { version = "8.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+pallet-contracts = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+pallet-contracts-primitives = { version = "24.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+pallet-timestamp = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+pallet-balances = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+sp-core = { version = "21.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
 
 [dev-dependencies]
-sp-io = { version = "24.0.0", default-features = false }
-sp-runtime = { version = "25.0.0", default-features = false }
+sp-io = { version = "23.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
+sp-runtime = { version = "24.0.0", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "release-v1.0.0-cumulus" }
 
 [features]
 default = ["std"]
