@@ -1,6 +1,6 @@
 [package]
 name = "pallet-hookpoints"
-version = "1.0.0"
+version = "1.0.1"
 description = "A pallet for managing ink! callbacks"
 authors = ["Christian Peters <chp@deep-ink.ventures>"]
 edition = "2021"
