@@ -8,7 +8,7 @@ license = "Apache-2.0"
 repository = "https://github.com/deep-ink-ventures/pallet-hookpoints/"
 homepage = "https://github.com/deep-ink-ventures/pallet_hookpoints"
 readme = "README.md"
-keywords = ["substrate", "ink!", "polkadot"]
+keywords = ["substrate", "ink", "polkadot"]
 categories = ["blockchain", "smart-contracts", "web3"]
 
 [dependencies]
