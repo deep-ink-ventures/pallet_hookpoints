@@ -54,7 +54,7 @@ impl pallet_hookpoints::Config for Runtime {
 Move to your substrate root folder and run:
 
 ```shell
-hookpoint-cli configure
+hookpoints-cli configure
 ```
 
 This will guide you through the setup process of creating hook points. You give your project a name (this will uy be the name of the trait that ink! devs need to implement).
@@ -75,7 +75,7 @@ The CLI will create a hookpoints.json in your root folder.
 Run
 
 ```shell
-hookpoint-cli generate
+hookpoints-cli generate
 ```
 
 And the CLI will generate
@@ -119,7 +119,7 @@ assert_ok!(HookPoints::register_specific_callback(
 ));
 ```
 
-The id can be found as label in the `contract.json`, when using hookpoint-cli (highly recommended) it's just `ChoosenName:choosen_hookpoint_name`.
+The id can be found as label in the `contract.json`, when using hookpoints-cli (highly recommended) it's just `ChoosenName:choosen_hookpoint_name`.
 
 ## Testing
 Here's how a typical test might look like:
