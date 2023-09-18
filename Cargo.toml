@@ -1,11 +1,11 @@
 [package]
 name = "pallet-hookpoints"
-version = "1.0.1"
+version = "1.0.2"
 description = "A pallet for managing ink! callbacks"
 authors = ["Christian Peters <chp@deep-ink.ventures>"]
 edition = "2021"
 license = "Apache-2.0"
-repository = "https://github.com/deep-ink-ventures/pallet-hookpoints/"
+repository = "https://github.com/deep-ink-ventures/pallet_hookpoints/"
 homepage = "https://github.com/deep-ink-ventures/pallet_hookpoints"
 readme = "README.md"
 keywords = ["substrate", "ink", "polkadot"]
